@@ -217,7 +217,7 @@ svg{
 }
 
 .section--projects {
-    margin: 12rem 0;
+    margin: 20rem 0;
     h2{
         font-size: 3rem;
     }
@@ -507,6 +507,15 @@ footer.flex-container .footer-bottom p a svg{
 /*--------------------------------------MOBILE STYLES---------------------------------*/
 
 @media only screen and (max-width: 600px) {
+
+    .selfie{
+        width: 100%;
+    }
+
+    .logos{
+        width: 13rem;
+    }
+
     .section-margin-spacing {
         margin: 0 2rem;
     }
@@ -516,7 +525,6 @@ footer.flex-container .footer-bottom p a svg{
         .header-grid-container{
             display: flex;
             flex-direction: column;
-            height: 100%;
             padding: 0;
             margin: 2rem;
             .navbar{
