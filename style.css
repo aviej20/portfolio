@@ -38,6 +38,10 @@ body{
     font-size: 1.75rem;
 }
 
+.logos{
+    width: 15rem;
+}
+
 .section-margin-spacing{
     margin: 4rem 10rem;
 }
@@ -125,7 +129,7 @@ svg{
    text-decoration-color: #2E58A2;
 }
 
-.navbar a span, .navbar a:hover{
+.navbar a span, .navbar a span:hover{
     font-family: 'Montserrat';
 }
 
@@ -191,7 +195,7 @@ svg{
 }
 
  .section--skills-contact .card h1, .section--skills-contact .card h2, .section--skills-contact .skills-heading h2, .section--skills-contact .card h3, .contact h2 {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     margin: 1rem;
     font-size: 3rem;
     color: #53B1E3;
