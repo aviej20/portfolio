@@ -512,6 +512,10 @@ footer.flex-container .footer-bottom p a svg{
         width: 100%;
     }
 
+    .logo .logos{
+        padding: 1rem;
+    }
+
     .logos{
         width: 13rem;
     }
