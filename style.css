@@ -601,7 +601,7 @@ footer.flex-container .footer-bottom .footer-bottom--links p a svg{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: .25rem;
+                gap: 1rem;
             }
         }
 }
