@@ -1,7 +1,7 @@
 /* MOBILE, STICKY BACK TO TOP */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{ 
     background-color: #2A2A2A;
@@ -12,18 +12,22 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans','Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: 'Jost','Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     scroll-behavior: smooth; 
 }
 
 .flex-container{
     display: flex;
     flex-direction: column;
-   
+}
+
+.heading{
+    color: #D4F6FF;
+     font-family: 'Montserrat';
 }
 
 .subheading{
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     margin: 1rem;
     font-size: 3rem;
     color: #53B1E3;
@@ -97,7 +101,7 @@ svg{
 }
 
 .navbar a{
-    font-size: 7vw;
+    font-size: 6vw;
     font-weight: 600;
     text-decoration: none;
     position: relative;
@@ -119,6 +123,10 @@ svg{
     color: #2E58A2;
    left: 1rem;
    text-decoration-color: #2E58A2;
+}
+
+.navbar a span, .navbar a:hover{
+    font-family: 'Montserrat';
 }
 
 .navbar a:hover span {
@@ -414,8 +422,12 @@ svg{
 .intro{
     display: flex;
     flex-direction: column;
-
     grid-row: 2/ 5; 
+
+    .subheading{
+        text-align: left;
+    }
+
     p{
         font-weight: 600;
         font-size: 1.25rem;
@@ -492,13 +504,20 @@ footer.flex-container .footer-bottom p a svg{
 
 @media only screen and (max-width: 600px) {
     .section-margin-spacing {
-        margin: 0 1rem;
+        margin: 0 2rem;
     }
     header{
         display: flex;
         flex-direction: column;
         .header-grid-container{
+            display: flex;
+            flex-direction: column;
             height: 100%;
+            padding: 0;
+            margin: 2rem;
+            .navbar{
+                display: none;
+            }
         }
     }
 
@@ -506,23 +525,55 @@ footer.flex-container .footer-bottom p a svg{
         .section--skills-contact{
             display: flex;
             flex-direction: column;
+            margin-bottom: 5rem;
+            .intro{
+                text-align: center;
+                .subheading{
+                    text-align: center;
+                }
+            }
+            > .card{
+                width: 65%;
+            }       
+
+            > .card:nth-child(odd){
+                align-self: flex-end;
+            }
+
             .contact{
                 margin: 0 1.5rem;
             }
         }
-        .projects-wrapper{
-            .project-card{
-                flex-direction: column;
-                .project-card--preview{
-                    width: auto;
-                    margin: 0 1rem;
-                    order: 2;
-                }
-                .project-card--description{
-                    width: auto;
-                    order: 1;
+
+        .section--projects{
+            margin: auto;
+            .projects-wrapper{
+                .project-card{
+                    flex-direction: column;
+                    .project-card--preview{
+                        width: auto;
+                        margin: 0 1rem;
+                        order: 2;
+                    }
+                    .project-card--description{
+                        width: auto;
+                        order: 1;
+                    }
                 }
             }
-        }
     }
+    }
+
+    footer.flex-container{
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+
+            .footer-bottom{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: .25rem;
+            }
+        }
 }
