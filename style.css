@@ -251,6 +251,10 @@ svg{
     gap: 1rem;
     width: 40%;
     padding: 3rem;
+    .project--links{
+        display: flex;
+        gap: 1.5rem;
+    }
 }
 
 .project-card--description .sub-subheading::before{
