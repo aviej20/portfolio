@@ -251,6 +251,12 @@ svg{
     gap: 1rem;
     width: 40%;
     padding: 3rem;
+
+    h4{
+        font-style: italic;
+        font-weight: 800;
+    }
+
     .project--links{
         display: flex;
         gap: 1.5rem;
@@ -395,6 +401,26 @@ svg{
     height: 1.75rem;
 }
 
+.button.button--resume button{
+    background-color: #53B1E3;
+    border: none;
+    padding: .5rem 1rem;
+    a{
+        color: #FAF9F6;
+    }
+}
+
+.button.button--resume button:hover{
+    background-color: #FAF9F6;
+box-shadow: -4px 4px 0px 1px #53B1E3;
+    a{
+        color: #53B1E3;
+    }
+    path{
+        fill: #53B1E3;
+    }
+}
+
 
 .button button a{
     font-family: Montserrat;
@@ -480,6 +506,7 @@ svg{
 footer.flex-container{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     background-color: #53B1E3;
  /*Why does 4rem and less not work */
@@ -522,14 +549,14 @@ footer.flex-container .footer-bottom .footer-bottom--links p a svg{
 
 /*--------------------------------------MOBILE STYLES---------------------------------*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
 
     .selfie{
         width: 100%;
     }
 
     .logo .logos{
-        padding: 1rem;
+        padding: 2rem;
     }
 
     .logos{
@@ -583,13 +610,18 @@ footer.flex-container .footer-bottom .footer-bottom--links p a svg{
                 .project-card{
                     flex-direction: column;
                     .project-card--preview{
-                        width: auto;
+                        width: 75%;
                         margin: 0 1rem;
-                        order: 2;
                     }
                     .project-card--description{
                         width: auto;
-                        order: 1;
+                    }
+
+                    .project--links{
+                        align-items: center;
+                        margin-top: .5rem;
+                        flex-direction: column;
+                        text-align: center;
                     }
                 }
             }
@@ -605,7 +637,26 @@ footer.flex-container .footer-bottom .footer-bottom--links p a svg{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 1rem;
+                gap: .5rem;
+                .footer-bottom--links{
+                    display: flex;
+                    gap: 1rem;
+                }
             }
         }
+}
+
+@media only screen and (max-width: 600px) {
+    main{
+        .section--projects{
+            .projects-wrapper{
+                .project-card{
+                    .project-card--preview{
+                        width: auto;
+                        order: 2;
+                    }
+                }
+            }
+    }
+    }
 }
