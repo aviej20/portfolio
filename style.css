@@ -38,6 +38,23 @@ body{
     font-size: 1.75rem;
 }
 
+.sub-subheading[data-status="in-progress"] > span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-subheading[data-status="in-progress"] > span::after{
+    content: 'In Progress';
+    font-size: 1rem;
+    padding: .25rem .5rem;
+    border: 2px solid #2E58A2;
+    border-radius: .25rem;
+    background-color: #53B1E3;
+    color: #FAF9F6;
+    white-space: nowrap;
+}
+
 .logos{
     width: 13rem;
 }
@@ -549,10 +566,10 @@ footer.flex-container .footer-bottom .footer-bottom--links p a svg{
 
 /*--------------------------------------MOBILE STYLES---------------------------------*/
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
 
     .selfie{
-        width: 100%;
+        max-width: 50vh;
     }
 
     .logo .logos{
@@ -611,10 +628,17 @@ footer.flex-container .footer-bottom .footer-bottom--links p a svg{
                     flex-direction: column;
                     .project-card--preview{
                         width: 75%;
-                        margin: 0 1rem;
+                        margin: 0 auto;
                     }
                     .project-card--description{
                         width: auto;
+                        .sub-subheading{
+                            span{
+                                flex-direction: column;
+                                align-items: flex-start;
+                                gap: .5rem;
+                            }
+                        }
                     }
 
                     .project--links{
@@ -654,6 +678,7 @@ footer.flex-container .footer-bottom .footer-bottom--links p a svg{
                     .project-card--preview{
                         width: auto;
                         order: 2;
+                        margin: 0;
                     }
                 }
             }
