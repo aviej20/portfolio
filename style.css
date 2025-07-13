@@ -590,7 +590,6 @@ footer.flex-container .footer-bottom .footer-bottom--links p a svg{
             display: flex;
             flex-direction: column;
             padding: 0;
-            margin: 2rem;
             .navbar{
                 display: none;
             }
