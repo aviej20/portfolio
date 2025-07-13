@@ -605,7 +605,11 @@ footer.flex-container .footer-bottom .footer-bottom--links p a svg{
             .intro{
                 text-align: center;
                 .subheading{
+                    font-size: 2rem;
                     text-align: center;
+                }
+                p{
+                    font-size: 1rem;
                 }
             }
             > .card{
