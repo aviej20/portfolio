@@ -24,6 +24,8 @@ body{
 .heading{
     color: #D4F6FF;
      font-family: 'Montserrat';
+     font-size: 3rem;
+     font-weight: 700;
 }
 
 .subheading{
@@ -70,7 +72,7 @@ body{
 }
 
 .card{
-    margin: 1rem;
+    margin: 1rem 4rem;
     padding: 1rem;
     border: 2px solid none;
     background-color: #FAF9F6;
@@ -102,7 +104,7 @@ svg{
 
 .logo{
     z-index: 999;
-    height: 10vh;
+    padding: 1rem 0;
     width: 100%;
     background-color: #2A2A2A;
     border-bottom: solid 2px #53B1E3;
@@ -340,6 +342,7 @@ svg{
     width: 100%;
     max-width: 550px;
     height: 75%;
+    flex: 0;
 }
 
 .form-wrapper form{
@@ -597,6 +600,11 @@ footer.flex-container .footer-bottom .footer-bottom--links p a svg{
     }
 
     main{
+
+        .card{
+            margin: 1rem;
+        }
+
         .section--skills-contact{
             display: flex;
             flex-direction: column;
@@ -629,6 +637,7 @@ footer.flex-container .footer-bottom .footer-bottom--links p a svg{
                     .project-card--preview{
                         width: 75%;
                         margin: 0 auto;
+                        order: 2;
                     }
                     .project-card--description{
                         width: auto;
