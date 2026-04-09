@@ -575,10 +575,10 @@ footer.flex-container .footer-bottom .footer-bottom--links p a svg{
         max-width: 50vh;
     }
 
-    .logo .logos{
-        padding: 2rem;
+    .heading{
+        text-align: center;
     }
-
+    
     .logos{
         width: 13rem;
     }
@@ -600,7 +600,6 @@ footer.flex-container .footer-bottom .footer-bottom--links p a svg{
     }
 
     main{
-
         .card{
             margin: 1rem;
         }
