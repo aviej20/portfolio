@@ -586,6 +586,7 @@ footer.flex-container .footer-bottom .footer-bottom--links p a svg{
     .section-margin-spacing {
         margin: 0 2rem;
     }
+
     header{
         display: flex;
         flex-direction: column;
